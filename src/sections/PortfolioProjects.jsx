@@ -1,0 +1,6 @@
+import { ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
+import SectionTitle from "../components/SectionTitle";
+import { projects } from "../data/projects";
+import { GithubIcon } from "../components/BrandIcons";
+export default function PortfolioProjects() { return <section id="projects" className="section"><div className="shell"><SectionTitle eyebrow="Selected work" title="Projects built while learning by doing." copy="Replace any project object in src/data/projects.js to update this grid." /><div className="projects-grid">{projects.map((project, index) => <motion.article key={project.title} className="project-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * .05 }}><div className="project-index">0{index + 1}</div><h3>{project.title}</h3><p>{project.description}</p><div className="tag-list">{project.stack.map((item) => <span key={item}>{item}</span>)}</div><div className="card-actions"><a href={project.repo} target="_blank" rel="noreferrer"><GithubIcon className="w-4 h-4" /> GitHub Repo</a><a href={project.demo} target="_blank" rel="noreferrer">Live Demo <ExternalLink size={16} /></a></div></motion.article>)}</div></div></section>; }

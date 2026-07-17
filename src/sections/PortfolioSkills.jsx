@@ -1,0 +1,4 @@
+import { motion } from "framer-motion";
+import SectionTitle from "../components/SectionTitle";
+import { skillGroups } from "../data/skills";
+export default function PortfolioSkills() { return <section id="skills" className="section muted-section"><div className="shell"><SectionTitle eyebrow="Technical toolkit" title="Skills I use to build end-to-end." copy="Grouped in one editable data file so your toolkit is always easy to update." /><div className="skills-grid">{skillGroups.map((group, index) => { const Icon = group.icon; return <motion.article key={group.title} className="skill-card" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * .06 }}><Icon /><h3>{group.title}</h3><div>{group.skills.map((skill) => <span key={skill}>{skill}</span>)}</div></motion.article>; })}</div></div></section>; }
