@@ -1,6 +1,6 @@
 export const profile = {
-    name: "Your Name",
-    title: "Full Stack Web Developer",
+    name: "Rahul Pareek",
+    title: "Full Stack Developer | Flutter Developer | Backend Enthusiast",
     email: "pareekrahul000@gmail.com",
     phone: "+91 95094 34270",
     location: "India",
