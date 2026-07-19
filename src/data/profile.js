@@ -7,7 +7,7 @@ export const profile = {
     resumeUrl: "/assets/Rahul_Pareek_Resume.pdf",
     social: {
         github: "https://github.com/Rahul4-bot",
-        linkedin: "https://www.linkedin.com/in/rahul-pareek-077079330",
+        linkedin: "https://www.linkedin.com/in/rahul-pareek-it?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         whatsapp: "https://wa.me/919509434270",
         leetcode: "https://leetcode.com/pareek_rahul/",
     },
