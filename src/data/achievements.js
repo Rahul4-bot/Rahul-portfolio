@@ -6,6 +6,6 @@ export const achievements = [{
     {
         title: "Upflair — Full Stack Development Internship (45 Days)",
         description: "Completed a 45-day Full Stack Development Internship at Upflair, where I gained hands-on experience in web development by building real-world projects using HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, Express.js, and MongoDB. Strengthened my understanding of frontend, backend, REST APIs, and database integration through practical implementation.",
-        image: "/upflair-logo.svg",
+        image: "/upflair-certificate-placeholder.svg",
     }
 ];
