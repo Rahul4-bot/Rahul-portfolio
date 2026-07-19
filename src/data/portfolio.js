@@ -7,7 +7,7 @@ export const profile = {
     location: "India",
     github: "https://github.com/Rahul4-bot",
     linkedin: "https://www.linkedin.com/in/rahul-pareek-077079330?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-    resume: "/resume.html",
+    resume: "/assets/Rahul_Pareek_Resume.pdf",
 };
 
 export const navLinks = [

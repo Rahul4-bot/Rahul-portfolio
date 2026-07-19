@@ -4,12 +4,12 @@ export const profile = {
     email: "pareekrahul000@gmail.com",
     phone: "+91 95094 34270",
     location: "India",
-    resumeUrl: "/resume.html",
+    resumeUrl: "/assets/Rahul_Pareek_Resume.pdf",
     social: {
         github: "https://github.com/Rahul4-bot",
         linkedin: "https://www.linkedin.com/in/rahul-pareek-077079330",
         whatsapp: "https://wa.me/919509434270",
-        leetcode: "https://leetcode.com/your-username/",
+        leetcode: "https://leetcode.com/pareek_rahul/",
     },
 };
 

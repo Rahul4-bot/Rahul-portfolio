@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Mail, FileText, ArrowRight, Sparkles } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "../components/BrandIcons";
 import { profile } from "../data/portfolio";
+import { openResume, resumeUrl } from "../utils/resume";
 
 export default function Hero() {
   return (
@@ -83,7 +84,8 @@ export default function Hero() {
             </a>
 
             <a
-              href={profile.resume}
+              href={resumeUrl}
+              onClick={openResume}
               target="_blank"
               rel="noreferrer"
               download

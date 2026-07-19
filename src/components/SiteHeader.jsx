@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { navigation, profile } from "../data/profile";
 import ThemeToggle from "./ThemeToggle";
+import { openResume, resumeUrl } from "../utils/resume";
 
 const idFor = (label) => label.toLowerCase();
 
@@ -20,7 +21,7 @@ export default function SiteHeader({ theme, onToggleTheme }) {
     <nav className="desktop-nav" aria-label="Primary navigation">
       {navigation.map((item) => <a key={item} className={active === idFor(item) ? "active" : ""} href={`#${idFor(item)}`}>{item}</a>)}
     </nav>
-    <div className="nav-actions"><ThemeToggle theme={theme} onToggle={onToggleTheme} /><a className="resume-link" href={profile.resumeUrl} target="_blank" rel="noreferrer">Resume / CV</a><button className="menu-button" type="button" onClick={() => setOpen(!open)} aria-label="Toggle navigation" aria-expanded={open}>{open ? <X /> : <Menu />}</button></div>
+    <div className="nav-actions"><ThemeToggle theme={theme} onToggle={onToggleTheme} /><a className="resume-link" href={resumeUrl} onClick={openResume} target="_blank" rel="noreferrer">Resume / CV</a><button className="menu-button" type="button" onClick={() => setOpen(!open)} aria-label="Toggle navigation" aria-expanded={open}>{open ? <X /> : <Menu />}</button></div>
   </div>
   {open && <nav className="mobile-nav" aria-label="Mobile navigation">{navigation.map((item) => <a key={item} href={`#${idFor(item)}`} onClick={() => setOpen(false)}>{item}</a>)}</nav>}</header>;
 }
